@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  
+  
+</head>
+<body>
+  <div class="calculator-wrapper">
+  <!-- Sección izquierda -->
+  <div class="form-box">
+    <h1>Mortgage Calculator</h1>
+    <a href="#" class="clear-link">Clear All</a>
+
+    <form>
+      <label for="amount">Mortgage Amount</label>
+      <div class="input-group">
+        <span class="prefix">£</span>
+        <input id="amount" type="number" placeholder="300,000">
+      </div>
+
+      <div class="inline-inputs">
+        <div class="input-half">
+          <label for="term">Mortgage Term</label>
+          <div class="input-group">
+            <input id="term" type="number" placeholder="25">
+            <span class="suffix">years</span>
+          </div>
+        </div>
+
+        <div class="input-half">
+          <label for="rate">Interest Rate</label>
+          <div class="input-group">
+            <input id="rate" type="number" step="0.01" placeholder="5.25">
+            <span class="suffix">%</span>
+          </div>
+        </div>
+      </div>
+
+      <label>Mortgage Type</label>
+      <div class="radio-group">
+        <label class="radio-option active">
+          <input type="radio" name="type" checked>
+          <span>Repayment</span>
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="type">
+          <span>Interest Only</span>
+        </label>
+      </div>
+
+      <button type="submit" class="calculate-btn">
+        <span class="icon">●</span>
+        Calculate Repayments
+      </button>
+    </form>
+  </div>
+
+  <!-- Sección derecha -->
+  <div class="results-box">
+    <h2>results shown here</h2>
+    <p class="results-desc">
+      complete the form and click calculate repayments" to see wath your monthly repayments would be.
+    </p>
+
+    
+ 
+</body>
+</html>
